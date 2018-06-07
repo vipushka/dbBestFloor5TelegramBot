@@ -55,11 +55,11 @@ public class BotMain extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return "dbbestFloor5";
+        return PropertiesReader.readAllProperties().getProperty("BOT_NAME");
     }
 
     public String getBotToken() {
-        return "595481323:AAHNZRQY-R1mmyOU_sweaxSIK3eqbuyjc2s";
+        return PropertiesReader.readAllProperties().getProperty("BOT_TOKEN");
     }
 
     public static class Main {
